@@ -24,8 +24,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -172,15 +170,11 @@ Project Link: [https://github.com/cassie365/minecraft-cool-weapons](https://gith
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/cassie365/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/cassie365/minecraft-cool-weapons.svg?style=for-the-badge
 [contributors-url]: https://github.com/cassie365/minecraft-cool-weapons/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/cassie365/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/cassie365/minecraft-cool-weapons.svg?style=for-the-badge
 [forks-url]: https://github.com/cassie365/minecraft-cool-weapons/network/members
-[stars-shield]: https://img.shields.io/github/stars/cassie365/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/cassie365/minecraft-cool-weapons.svg?style=for-the-badge
 [stars-url]: https://github.com/cassie365/minecraft-cool-weapons/stargazers
-[issues-shield]: https://img.shields.io/github/issues/cassie365/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/cassie365/minecraft-cool-weapons.svg?style=for-the-badge
 [issues-url]: https://github.com/cassie365/minecraft-cool-weapons/issues
-[license-shield]: https://img.shields.io/github/license/cassie365/repo.svg?style=for-the-badge
-[license-url]: 
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: 
