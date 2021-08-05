@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
+*** cassie365, minecraft-cool-weapons, twitter_handle, email, Cool Weapons for Minecraft, A minecraft mod that adds really cool weapons
 -->
 
 
@@ -32,23 +32,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/cassie365/minecraft-cool-weapons">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Cool Weapons for Minecraft</h3>
 
   <p align="center">
-    project_description
+    A minecraft mod that adds really cool weapons
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/cassie365/minecraft-cool-weapons"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/cassie365/minecraft-cool-weapons">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/cassie365/minecraft-cool-weapons/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/cassie365/minecraft-cool-weapons/issues">Request Feature</a>
   </p>
 </p>
 
@@ -89,7 +89,7 @@
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+`cassie365`, `minecraft-cool-weapons`, `twitter_handle`, `email`, `Cool Weapons for Minecraft`, `A minecraft mod that adds really cool weapons`
 
 
 ### Built With
@@ -107,39 +107,20 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+If you would like to contribute to this project, please have the following completed before forking:
 
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-
-
+1. Install Eclipse
+2. Install Java 1.8 JDK
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
-
+See the [open issues](https://github.com/cassie365/minecraft-cool-weapons/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
@@ -153,21 +134,28 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+### Setting Up this Project
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/cassie365/minecraft-cool-weapons.git
+   ```
+2. Import project into Eclipse IDE
+3. Ensure that you have JRE 1.8 specified for the project, or your IDE will not recognize Java's runtime
+4. Open the 'Gradle Tasks' window and double-click on genEclipseRuns.
+5. Once Complete, go to File->Import->Launch Configurations and select the Project fold. Import (check) both configurations
+6. To confirm successful import of project, click the green play button to run the runClient task in Gradle. A minecraft instance should start!
+
 
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/cassie365/minecraft-cool-weapons](https://github.com/cassie365/minecraft-cool-weapons)
 
 
 
@@ -184,15 +172,15 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/cassie365/repo.svg?style=for-the-badge
+[contributors-url]: https://github.com/cassie365/repo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/cassie365/repo.svg?style=for-the-badge
+[forks-url]: https://github.com/cassie365/repo/network/members
+[stars-shield]: https://img.shields.io/github/stars/cassie365/repo.svg?style=for-the-badge
+[stars-url]: https://github.com/cassie365/repo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/cassie365/repo.svg?style=for-the-badge
+[issues-url]: https://github.com/cassie365/repo/issues
+[license-shield]: https://img.shields.io/github/license/cassie365/repo.svg?style=for-the-badge
+[license-url]: https://github.com/cassie365/repo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://linkedin.com/in/cassie365
