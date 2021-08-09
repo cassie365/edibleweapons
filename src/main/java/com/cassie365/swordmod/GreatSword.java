@@ -10,14 +10,16 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraftforge.common.ToolType;
 
-public class GreatSword extends Item{
+/**
+ * Class representing a greatsword
+ * @author cassie365
+ *
+ */
+public class GreatSword extends SwordItem{
 	
     private static final Logger LOGGER = LogManager.getLogger();
 
 	public GreatSword() {
-		super(new Item.Properties()
-				.tab(CreativeModeTab.TAB_COMBAT)
-				.durability(1561));
 		LOGGER.info("New Great Sword made");
 	}
 	
