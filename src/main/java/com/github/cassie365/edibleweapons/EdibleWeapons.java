@@ -1,4 +1,4 @@
-package com.cassie365.swordmod;
+package com.github.cassie365.edibleweapons;
 
 import java.util.stream.Collectors;
 
@@ -28,20 +28,20 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistryEntry;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("swordmod")
-public class SwordMod
+@Mod("edibleweapons")
+public class EdibleWeapons
 {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
     
     //Sword Stuff
     public static Item mySword;
-    public static final String MODID = "swordmod";
+    public static final String MODID = "edibleweapons";
     
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     
 
-    public SwordMod() {
+    public EdibleWeapons() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -61,8 +61,6 @@ public class SwordMod
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
-        mySword = new GreatSword();
-        LOGGER.info("Registered "+mySword.toString());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
