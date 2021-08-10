@@ -21,4 +21,8 @@ public enum EdibleWeaponTypes {
 	public String getDesc() {
 		return this.desc;
 	}
+	
+	public String getRegName() {
+		return this.desc.toLowerCase().replace(' ', '_');
+	}
 }

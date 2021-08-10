@@ -26,7 +26,7 @@ public class EdibleDynamicWeapon extends SwordItem{
 	public EdibleDynamicWeapon(EdibleWeaponTiers edibleWeaponTier, int att, float speed, EdibleWeaponTypes type) {
 		super(edibleWeaponTier,att+edibleWeaponTier.getQuality().getAttackBonus(),speed+edibleWeaponTier.getQuality().getSpeedBonus(),new Item.Properties().durability(edibleWeaponTier.getUses())
 					.tab(CreativeModeTab.TAB_COMBAT));
-		this.setRegistryName(edibleWeaponTier.getDesc()+" "+type.getDesc());
+		this.setRegistryName(edibleWeaponTier.getRegName()+"_"+type.getRegName());
 		LOGGER.info(this.getRegistryName()+" created");
 	}
 	

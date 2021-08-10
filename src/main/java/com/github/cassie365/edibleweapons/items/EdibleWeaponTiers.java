@@ -66,6 +66,10 @@ public enum EdibleWeaponTiers implements Tier{
 		return this.desc;
 	}
 	
+	public String getRegName() {
+		return this.desc.toLowerCase().replace(' ', '_');
+	}
+	
 	public Quality getQuality() {
 		return this.quality;
 	}
