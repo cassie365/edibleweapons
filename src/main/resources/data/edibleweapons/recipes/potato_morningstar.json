@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " XX",
+    " OX",
+    "S  "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:crops/potato"
+    },
+    "S": {
+      "tag": "forge:rods/wooden"
+    },
+    "O": {
+      "tag": "forge:string"
+    }
+  },
+  "result": {
+    "item": "edibleweapons:potato_morningstar"
+  }
+}

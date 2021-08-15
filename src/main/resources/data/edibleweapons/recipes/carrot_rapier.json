@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  X",
+    " X ",
+    "S  "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:crops/carrot"
+    },
+    "S": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "edibleweapons:carrot_rapier"
+  }
+}

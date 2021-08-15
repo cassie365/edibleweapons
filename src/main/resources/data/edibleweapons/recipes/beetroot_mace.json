@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  X",
+    " O ",
+    "S  "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:crops/beetroot"
+    },
+    "S": {
+      "tag": "forge:rods/wooden"
+    },
+    "O": {
+      "tag": "forge:string"
+    }
+  },
+  "result": {
+    "item": "edibleweapons:beetroot_mace"
+  }
+}

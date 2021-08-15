@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " X ",
+    "S  "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:crops/potato"
+    },
+    "S": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "edibleweapons:potato_dagger"
+  }
+}

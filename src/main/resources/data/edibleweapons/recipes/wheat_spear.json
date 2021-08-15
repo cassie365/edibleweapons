@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  X",
+    " S ",
+    "S  "
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:crops/wheat"
+    },
+    "S": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "item": "edibleweapons:wheat_spear"
+  }
+}
