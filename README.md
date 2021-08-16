@@ -31,7 +31,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/cassie365/minecraft-cool-weapons">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/63379551/129614740-e5d1009f-edd4-4428-97e9-c29dc3c7d7e3.png" alt="Logo" width="247" height="171">
   </a>
 
   <h3 align="center">Edible Weapons for Minecraft</h3>
