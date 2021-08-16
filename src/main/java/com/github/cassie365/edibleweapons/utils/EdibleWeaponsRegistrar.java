@@ -48,8 +48,8 @@ public class EdibleWeaponsRegistrar {
 			int wtier = 0;
 			for(EdibleWeaponTiers e:EdibleWeaponTiers.values()) {
 				int change = arr[wtier];
-				int subAtt = 3+change;
-				float subSpd = 2.4f+change;
+				int subAtt = 1+change;
+				float subSpd = change/10f;
 				weapons.add(new EdibleDynamicWeapon(e,subAtt,subSpd,t));
 				wtier++;
 			}

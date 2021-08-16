@@ -11,10 +11,10 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public enum EdibleWeaponTiers implements Tier{
-   WHEAT("Wheat",0, 32, 4.0F, 1.0F, 5,EdibleWeaponQualities.LIGHT, Items.WHEAT),
-   POTATO("Potato",0, 32, 4.0F, 1.0F, 5,EdibleWeaponQualities.HEAVY, Items.POTATO),
-   CARROT("Carrot",0, 32, 4.0F, 1.0F, 5,EdibleWeaponQualities.MID, Items.CARROT),
-   BEETROOT("Beetroot",0, 32, 4.0F, 1.0F, 22,EdibleWeaponQualities.MID, Items.BEETROOT);
+   WHEAT("Wheat",0, 32, 1.0F, 1.0F, 5,EdibleWeaponQualities.LIGHT, Items.POTATO, Items.WHEAT),
+   POTATO("Potato",0, 32, 1.0F, 1.0F, 5,EdibleWeaponQualities.HEAVY, Items.POTATO),
+   CARROT("Carrot",0, 32, 1.0F, 1.0F, 5,EdibleWeaponQualities.MID, Items.CARROT),
+   BEETROOT("Beetroot",0, 32, 1.0F, 1.0F, 22,EdibleWeaponQualities.MID, Items.BEETROOT);
 	
 	private final String desc;
    private final int level;
@@ -26,6 +26,18 @@ public enum EdibleWeaponTiers implements Tier{
    private final FoodProperties foodprops;
    private final Ingredient repairIngredient;
 
+   private EdibleWeaponTiers(String desc, int level, int uses, float speed, float damage, int enchantmentValue,Quality quality, Item foodItem, Item repairItem) {
+	   this.desc = desc;
+      this.level = level;
+      this.uses = uses;
+      this.speed = speed;
+      this.damage = damage;
+      this.enchantmentValue = enchantmentValue;
+      this.quality = quality;
+      repairIngredient = Ingredient.of(repairItem);
+      foodprops = foodItem.getFoodProperties();
+   }
+   
    private EdibleWeaponTiers(String desc, int level, int uses, float speed, float damage, int enchantmentValue,Quality quality, Item foodItem) {
 	   this.desc = desc;
       this.level = level;

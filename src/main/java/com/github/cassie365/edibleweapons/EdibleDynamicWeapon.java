@@ -21,10 +21,10 @@ import net.minecraftforge.common.ToolType;
  *
  */
 public class EdibleDynamicWeapon extends SwordItem{
-	private static final int MIN_ATT = 2;
-	private static final int MAX_ATT = 5;
-	private static final float MIN_SPD = 1f;
-	private static final float MAX_SPD = 8f;
+	private static final int MIN_ATT = 1;
+	private static final int MAX_ATT = 4;
+	private static final float MIN_SPD = 0.8f;
+	private static final float MAX_SPD = 2f;
     private static final Logger LOGGER = LogManager.getLogger();
 
 	public EdibleDynamicWeapon(EdibleWeaponTiers edibleWeaponTier, int att, float speed, EdibleWeaponTypes type) {
@@ -32,10 +32,11 @@ public class EdibleDynamicWeapon extends SwordItem{
 					.tab(CreativeModeTab.TAB_COMBAT).food(edibleWeaponTier.getFoodProps()));
 		this.setRegistryName(edibleWeaponTier.getRegName()+"_"+type.getRegName());
 		LOGGER.info(this.getRegistryName()+" created");
+		LOGGER.info(toString());
 	}
 	
 	private static int calcAtt(EdibleWeaponTiers edibleWeaponTier, int att) {
-		int totalAtt = (int)edibleWeaponTier.getAttackDamageBonus()+att;
+		int totalAtt = (int)edibleWeaponTier.getQuality().getAttackBonus()+att;
 		if(totalAtt<MIN_ATT)
 			return MIN_ATT;
 		else if(totalAtt>MAX_ATT)
@@ -45,7 +46,7 @@ public class EdibleDynamicWeapon extends SwordItem{
 	}
 	
 	private static float calcSpd(EdibleWeaponTiers edibleWeaponTier, float spd) {
-		float totalSpd = (int)edibleWeaponTier.getSpeed()+spd;
+		float totalSpd = edibleWeaponTier.getQuality().getSpeedBonus()+spd;
 		if(totalSpd<MIN_SPD)
 			return MIN_SPD;
 		else if(totalSpd>MAX_SPD)
@@ -54,8 +55,9 @@ public class EdibleDynamicWeapon extends SwordItem{
 		return totalSpd;
 	}
 	
+	@Override
 	public String toString() {
-		return "Name: "+this.getRegistryName();
+		return "EdibleDynamicWeapon [getRegistryName()=" + getRegistryName() + "]";
 	}
 	
 }

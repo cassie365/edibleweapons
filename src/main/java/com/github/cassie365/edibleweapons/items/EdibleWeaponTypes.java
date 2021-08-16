@@ -9,7 +9,7 @@ public enum EdibleWeaponTypes {
 	MORNINGSTAR("Morningstar"),
 	SPEAR("Spear"),
 	RAPIER("Rapier"),
-	DAGGER("Dagger"),
+	DAGGER("Dagger");
 	//BOMB("Bomb");
 	
 	private String desc;

@@ -4,14 +4,14 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public enum EdibleWeaponQualities implements Quality {
-	   HEAVY(1,-1),
-	   MID(0,0),
-	   LIGHT(-1,1);
+	   HEAVY(1,-.1f),
+	   MID(0,0f),
+	   LIGHT(-1,.1f);
 	
 	private final int att;
-	private final int speed;
+	private final float speed;
 	
-	private EdibleWeaponQualities(int att,int speed) {
+	private EdibleWeaponQualities(int att,float speed) {
 		this.att = att;
 		this.speed = speed;
 	}
@@ -20,7 +20,7 @@ public enum EdibleWeaponQualities implements Quality {
 		return this.att;
 	}
 	
-	public int getSpeedBonus() {
+	public float getSpeedBonus() {
 		return this.speed;
 	}
 
