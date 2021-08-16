@@ -34,10 +34,14 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Cool Weapons for Minecraft</h3>
+  <h3 align="center">Edible Weapons for Minecraft</h3>
 
   <p align="center">
-    A minecraft mod that adds really cool weapons
+    A mod that allows you to put your crops to use for the sake of cartoon violence! Exploring unknown depths and all you have left is a 64 stack of food? Now you can make use of your food surplus in style!
+
+  This mod makes use of another internal project which procedurally generates the weapon textures and information based on the product of Weapon types * materials(food items).
+  
+  LATEST VERSION: v.1.0.0 - first release of my mod! Cleaning up docs and messy code.
     <br />
     <a href="https://github.com/cassie365/minecraft-cool-weapons"><strong>Explore the docs »</strong></a>
     <br />
@@ -92,9 +96,10 @@ Here's a blank template to get started:
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Forge Build: 1.17.1-37.0.25]()
+* [Eclipse 2020]()
+* [Java 1.8]()
+* [gradle]()
 
 
 
