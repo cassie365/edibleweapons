@@ -4,9 +4,9 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public enum EdibleWeaponQualities implements Quality {
-	   HEAVY(2,-2),
+	   HEAVY(1,-1),
 	   MID(0,0),
-	   LIGHT(-2,2);
+	   LIGHT(-1,1);
 	
 	private final int att;
 	private final int speed;

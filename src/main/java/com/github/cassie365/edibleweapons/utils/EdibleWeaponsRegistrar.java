@@ -1,7 +1,9 @@
 package com.github.cassie365.edibleweapons.utils;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,32 +25,34 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
 public class EdibleWeaponsRegistrar {
 	private static final Logger LOGGER = LogManager.getLogger();
-	private static int[][] suitability_matrix = {
-			{2,-2,0,0},
-			{2,-2,0,0},
-			{2,-2,0,2},
-			{-2,2,-2,0},
-			{-2,2,-2,0},
-			{-2,2,-2,0},
-			{0,0,2,0},
-			{0,-2,2,0},
-			{0,-2,2,0},
-			{-2,0,0,2}
-			
-	};
+	private static Map<String,Integer[]> suitability = new HashMap();
+	
+	static {
+		suitability.put("Whip",new Integer[]{1,-1,0,0});
+		suitability.put("Long Sword",new Integer[]{1,-1,0,0});
+		suitability.put("Staff",new Integer[]{1,-1,0,1});
+		suitability.put("Mace",new Integer[]{-1,1,-1,0});
+		suitability.put("Hammer",new Integer[]{-1,1,-1,0});
+		suitability.put("Morningstar",new Integer[]{-1,1,-1,0});
+		suitability.put("Spear",new Integer[]{0,0,1,0});
+		suitability.put("Rapier",new Integer[]{0,-1,1,0});
+		suitability.put("Dagger",new Integer[]{0,-1,1,0});
+		suitability.put("Bomb",new Integer[]{-1,0,0,1});
+	}
 	
 	private static List<EdibleDynamicWeapon> weapons = new ArrayList();
 	
 	private static void genWeapons() {
-		int wtype = 0;
 		for(EdibleWeaponTypes t:EdibleWeaponTypes.values()) {
+			Integer[] arr = suitability.get(t.getDesc());
 			int wtier = 0;
 			for(EdibleWeaponTiers e:EdibleWeaponTiers.values()) {
-				int change = suitability_matrix[wtype][wtier];
-				weapons.add(new EdibleDynamicWeapon(e,3+change,(float) 2.4f+change,t));
+				int change = arr[wtier];
+				int subAtt = 3+change;
+				float subSpd = 2.4f+change;
+				weapons.add(new EdibleDynamicWeapon(e,subAtt,subSpd,t));
 				wtier++;
 			}
-			wtype++;
 		}
 	}
 	

@@ -1,16 +1,16 @@
 package com.github.cassie365.edibleweapons.items;
 
 public enum EdibleWeaponTypes {
-	WHIP("Whip"),
+	//WHIP("Whip"),
 	LONG_SWORD("Long Sword"),
 	STAFF("Staff"),
 	MACE("Mace"),
-	HAMMER("Hammer"),
+	//HAMMER("Hammer"),
 	MORNINGSTAR("Morningstar"),
 	SPEAR("Spear"),
 	RAPIER("Rapier"),
 	DAGGER("Dagger"),
-	BOMB("Bomb");
+	//BOMB("Bomb");
 	
 	private String desc;
 	

@@ -4,22 +4,17 @@ import java.util.function.Supplier;
 
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.LazyLoadedValue;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public enum EdibleWeaponTiers implements Tier{
-   WHEAT("Wheat",0, 100, 5.0F, -1.0F, 5,EdibleWeaponQualities.LIGHT, () -> {
-	      return Ingredient.of(ItemTags.PLANKS);
-   }),
-   POTATO("Potato",1, 100, 4.0F, 0.0F, 5,EdibleWeaponQualities.HEAVY,  () -> {
-	      return Ingredient.of(ItemTags.PLANKS);
-   }),
-   CARROT("Carrot",1, 100, 4.0F, 0.0F, 5,EdibleWeaponQualities.MID, () -> {
-	      return Ingredient.of(ItemTags.PLANKS);
-   }),
-   BEETROOT("Beetroot",2, 100, 5.0F, -1.0F, 22,EdibleWeaponQualities.MID, () -> {
-	      return Ingredient.of(ItemTags.PLANKS);
-   });
+   WHEAT("Wheat",0, 32, 4.0F, 1.0F, 5,EdibleWeaponQualities.LIGHT, Items.WHEAT),
+   POTATO("Potato",0, 32, 4.0F, 1.0F, 5,EdibleWeaponQualities.HEAVY, Items.POTATO),
+   CARROT("Carrot",0, 32, 4.0F, 1.0F, 5,EdibleWeaponQualities.MID, Items.CARROT),
+   BEETROOT("Beetroot",0, 32, 4.0F, 1.0F, 22,EdibleWeaponQualities.MID, Items.BEETROOT);
 	
 	private final String desc;
    private final int level;
@@ -28,9 +23,10 @@ public enum EdibleWeaponTiers implements Tier{
    private final float damage;
    private final int enchantmentValue;
    private final Quality quality;
-   private final LazyLoadedValue<Ingredient> repairIngredient;
+   private final FoodProperties foodprops;
+   private final Ingredient repairIngredient;
 
-   private EdibleWeaponTiers(String desc, int level, int uses, float speed, float damage, int enchantmentValue,Quality quality, Supplier<Ingredient> repairIngredient) {
+   private EdibleWeaponTiers(String desc, int level, int uses, float speed, float damage, int enchantmentValue,Quality quality, Item foodItem) {
 	   this.desc = desc;
       this.level = level;
       this.uses = uses;
@@ -38,7 +34,12 @@ public enum EdibleWeaponTiers implements Tier{
       this.damage = damage;
       this.enchantmentValue = enchantmentValue;
       this.quality = quality;
-      this.repairIngredient = new LazyLoadedValue<>(repairIngredient);
+      repairIngredient = Ingredient.of(foodItem);
+      foodprops = foodItem.getFoodProperties();
+   }
+   
+   public FoodProperties getFoodProps() {
+	   return this.foodprops;
    }
 
    
@@ -81,7 +82,9 @@ public enum EdibleWeaponTiers implements Tier{
 
 	@Override
 	public Ingredient getRepairIngredient() {
-		return this.repairIngredient.get();
+		return this.repairIngredient;
 	}
+	
+	
 
 }
